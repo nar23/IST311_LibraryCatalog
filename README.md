@@ -1,7 +1,7 @@
-# IST311_LibraryCatalog
+# IST311_LibraryCatalog #
 Repository for a Library Catalog project for our IST 311 class.
 Team Members: Jennifer A'Harrah, Eric Liang, Sachin Patel, Nadia Rahim
-* "Scrum Master:" Sachin Patel --- "Product Owner:" Jennifer A'Harrah *
+* "Scrum Master:" Sachin Patel --- "Product Owner:" Jennifer A'Harrah
 
 # PROJECT INSTRUCTIONS:
 Design a Library catalog. Create a catalog that contains various books.
