@@ -13,44 +13,57 @@ package ist311_librarycatalog;
  * @author Jennifer A'Harrah <jka5240@psu.edu>
  */
 public class Book {
-
+    // Declare private fields needed when creating a book object
     private static String _ISBN;
     private static String _title;
     private static String _author;
     private static String _genre;
+
+    // Constructor for easily creating new book objects
+    Book (String ISBN, String title, String author, String genre) {
+        _ISBN = ISBN;
+        _title = title;
+        _author = author;
+        _genre = genre;
+        
+    }
+    
     /*
     ===========GETTERS AND SETTERS==================
     */
-    public static String getISBN() {
+    
+
+
+    public String getISBN() {
         return _ISBN;
     }
 
-    public static void setISBN(String _ISBN) {
-        Book._ISBN = _ISBN;
+    public void setISBN(String ISBN) {
+        _ISBN = ISBN;
     }
 
-    public static String getTitle() {
+    public String getTitle() {
         return _title;
     }
 
-    public static void setTitle(String _title) {
-        Book._title = _title;
+    public void setTitle(String title) {
+        _title = title;
     }
 
-    public static String getAuthor() {
-        return _author;
+    public String getAuthor() {
+        return this._author;
     }
 
-    public static void setAuthor(String _author) {
-        Book._author = _author;
+    public void setAuthor(String author) {
+        _author = author;
     }
 
-    public static String getGenre() {
+    public String getGenre() {
         return _genre;
     }
 
-    public static void setGenre(String _genre) {
-        Book._genre = _genre;
+    public void setGenre(String genre) {
+        _genre = genre;
     } 
     
     //=================METHODS==============
@@ -59,12 +72,18 @@ public class Book {
         //implemented method here
     }
     // will mark a book as returned
-    public void  returned(){
+    public void returned(){
         //implemented method here
     }
     // will check if a book has been borrowed
     // true if yes, false if it is not
     private boolean isBorrowed(){
         //implemented method here
+        
+        
+        // Return 'true' for now so that code will compile (return type required)
+        return true;
     }
+    
+    
 }
