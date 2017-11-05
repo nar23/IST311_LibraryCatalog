@@ -14,10 +14,10 @@ package ist311_librarycatalog;
  */
 public class Book {
     // Declare private fields needed when creating a book object
-    private static String _ISBN;
-    private static String _title;
-    private static String _author;
-    private static String _genre;
+    private String _ISBN;
+    private String _title;
+    private String _author;
+    private String _genre;
 
     // Constructor for easily creating new book objects
     Book (String ISBN, String title, String author, String genre) {
@@ -31,7 +31,9 @@ public class Book {
     /*
     ===========GETTERS AND SETTERS==================
     */
-    
+    Book () {
+        
+    }
 
 
     public String getISBN() {

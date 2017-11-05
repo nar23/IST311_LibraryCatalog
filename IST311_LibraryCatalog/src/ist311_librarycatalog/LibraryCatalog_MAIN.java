@@ -26,6 +26,9 @@ public class LibraryCatalog_MAIN {
         System.out.println(book1.getISBN());
         System.out.println(book1.getGenre());
         
+        Catalog catalog = new Catalog();
+        catalog.displayBooks();
+        
     }
     
 }
