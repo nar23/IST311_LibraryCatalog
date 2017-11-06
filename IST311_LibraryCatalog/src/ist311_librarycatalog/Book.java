@@ -70,8 +70,31 @@ public class Book {
     
     //=================METHODS==============
     // will mark a book as borrowed
-    public void borrowed(){
-        //implemented method here
+    public void borrowed( String title){
+        int search= 'a';
+        for (Book book= books){
+            if (book.getTitle().equals(title)){
+                if (search=='a'){
+                    search = 'b'
+                }
+              if (!book.isBorrowed()) {
+                    book.borrowed();
+                    search = 'c';
+                    break; 
+                  
+              };
+            }
+         if (search == 'a') {
+            System.out.println("This book is not available.");
+        } else if (search== 'b') {
+            System.out.println("This book is already borrowed.");
+        } else if (search == 'c') {
+            System.out.println("You have successfully borrowed " + title);
+        }
+    }   
+        
+        
+        
     }
     // will mark a book as returned
     public void returned(){
