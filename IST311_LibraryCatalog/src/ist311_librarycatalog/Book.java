@@ -11,6 +11,7 @@ package ist311_librarycatalog;
  * 
  * @author Eric Liang <eql5121@psu.edu>
  * @author Jennifer A'Harrah <jka5240@psu.edu>
+ * @author Nadia A Rahim <nar23@psu.edu>
  */
 public class Book {
     // Declare private fields needed when creating a book object
@@ -71,24 +72,24 @@ public class Book {
     //=================METHODS==============
     // will mark a book as borrowed
     public void borrowed( String title){
-        int search= 'a';
+        int search= 'book1';
         for (Book book= books){
             if (book.getTitle().equals(title)){
-                if (search=='a'){
-                    search = 'b'
+                if (search=='book1'){
+                    search = 'book2'
                 }
               if (!book.isBorrowed()) {
                     book.borrowed();
-                    search = 'c';
+                    search = 'book3';
                     break; 
                   
               };
             }
-         if (search == 'a') {
+         if (search == 'book1') {
             System.out.println("This book is not available.");
-        } else if (search== 'b') {
+        } else if (search== 'book2') {
             System.out.println("This book is already borrowed.");
-        } else if (search == 'c') {
+        } else if (search == 'book3') {
             System.out.println("You have successfully borrowed " + title);
         }
     }   
