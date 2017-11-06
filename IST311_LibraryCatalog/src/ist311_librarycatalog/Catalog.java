@@ -14,6 +14,7 @@ import java.util.List;
  * the catalog, etc.
  *
  * @author Jennifer A'Harrah <jka5240@psu.edu>
+ * @author Nadia A Rahim<nar23@psu.edu>
  */
 public class Catalog {
 
@@ -31,7 +32,10 @@ public class Catalog {
 
         }
     };
-    
+    /**
+    * This method will display the books in the catalog
+    * It will display the number,names,the size, author etc of the books in the catalog
+    */
     public void displayBooks() {
         System.out.println("------BOOK CATALOG------");
         System.out.println("Number of books: [" + books.size() + "]");
